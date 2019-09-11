@@ -6,8 +6,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
-      <teamcity-version>10.0</teamcity-version>
-      <teamcity-path>D:/TeamCity</teamcity-path>
+      <teamcity-version>2019.1</teamcity-version>
+      <teamcity-path>${env.PWD}/TeamCity</teamcity-path>
       <kotlin.version>1.0.5-2</kotlin.version>
   </properties>
 
@@ -29,13 +29,13 @@
     <repositories>
     <repository>
         <id>JetBrains</id>
-        <url>http://repository.jetbrains.com/all</url>
+        <url>https://download.jetbrains.com/teamcity-repository</url>
     </repository>
   </repositories>
   <pluginRepositories>
       <pluginRepository>
           <id>JetBrains</id>
-          <url>http://repository.jetbrains.com/all</url>
+          <url>https://download.jetbrains.com/teamcity-repository</url>
       </pluginRepository>
   </pluginRepositories>
   <build>

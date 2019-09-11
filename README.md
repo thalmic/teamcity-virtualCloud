@@ -16,7 +16,8 @@ configuration connected to virtual cloud agents should be writable for server
 
 # Build
 
-execute *mvn package* in root folder
+* You may need to update `pom.xml` and set the property `teamcity-path` to point to a TeamCity server installation. By default it will look inside the project for a folder called `TeamCity`
+* Execute `mvn package` in root folder
 
 # How it works
 1. Admin connects *Virtual Cloud* in *Agent Cloud* tab. In *Agent images* property add paths to configuration files of agents he want to connect to *Virtual Cloud*. This agent should be connected (authorized or not authorized)
